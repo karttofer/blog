@@ -3,12 +3,14 @@ import ReactMarkdown from "react-markdown";
 import parse from "html-react-parser";
 
 import { LayoutBlog } from "../compound/main";
+import { BackIconBlog } from "../shared/main";
 
 const PostHeader = ({ storyInfo, userInfo }) => {
   const dateObj = new Date(storyInfo["pubDate"]);
 
   return (
-    <LayoutBlog.Header className="post-header">
+    <LayoutBlog.Header>
+      <BackIconBlog text="Back" />
       <h1>{storyInfo.title}</h1>
       <div className="post-header">
         <img src={userInfo["img"]} />

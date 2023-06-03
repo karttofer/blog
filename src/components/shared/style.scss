@@ -1,0 +1,24 @@
+.back-icon {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: all 0.4s;
+  &:hover {
+    opacity: 1;
+
+    img {
+      transform: translateX(-9px);
+    }
+    transition: all 0.4s;
+  }
+  img {
+    width: 17px;
+    height: 17px;
+    margin: 10px;
+    transition: all 0.4s;
+  }
+}

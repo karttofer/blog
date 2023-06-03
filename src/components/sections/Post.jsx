@@ -5,6 +5,12 @@ import parse from "html-react-parser";
 import { LayoutBlog } from "../compound/main";
 import { BackIconBlog } from "../shared/main";
 
+/**
+   1. We need to create the functionality to load post
+   when we select the post in the main page
+   2. Improve the post in medium to get the git code
+ */
+
 const PostHeader = ({ storyInfo, userInfo }) => {
   const dateObj = new Date(storyInfo["pubDate"]);
 

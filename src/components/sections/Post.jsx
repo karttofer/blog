@@ -27,8 +27,7 @@ const PostHeader = ({ storyInfo, userInfo }) => {
               .replace(" on Medium", "")}
           </p>
           <p>
-            {" "}
-            Published Date ·{" "}
+            Published Date ·
             {dateObj.toISOString().slice(0, 19).replace("T", " ")}
           </p>
         </div>
